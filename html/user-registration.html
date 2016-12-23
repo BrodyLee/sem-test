@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height initial-scale=1.0">
+    <title>Registration</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/app/sass/style.css">
+</head>
+<body>
+<article class="registration-bg">
+    <h1 class="white-text light">User Registration</h1>
+    <main>
+        <form action="" class="registration-form">
+            <div class="half-input">
+                <div class="input-field">
+                    <i class="material-icons prefix user-reg-ico"></i>
+                    <input id="first_name-reg" type="text" class="validate">
+                    <label for="first_name-reg">First Name</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix user-reg-ico"></i>
+                    <input id="last_name-reg" type="text" class="validate">
+                    <label for="last_name-reg">Last Name</label>
+                </div>
+            </div>
+            <div class="input-field">
+                <div>
+                    <div>
+                        <i class="material-icons prefix">public</i>
+                        <input type="text" id="dropdown-country" name="text" autocomplete="off" style="cursor: pointer">
+                        <label for="dropdown-country">Select A Country</label>
+                        <i class="material-icons right dropdown-country-arrow"></i>
+                    </div>
+                    <div class="dropdown-country-content">
+                        <span><i class="material-icons canada-country-ico left"></i>United Kingdom</span>
+                        <span><i class="material-icons canada-country-ico left"></i>Canada</span>
+                        <span><i class="material-icons canada-country-ico left"></i>Australia</span>
+                        <span><i class="material-icons canada-country-ico left"></i>Belgium</span>
+                        <span><i class="material-icons canada-country-ico left"></i>Italy</span>
+                    </div>
+                </div>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix email-reg-ico"></i>
+                <input id="email-reg" type="email" class="validate">
+                <label for="email-reg">Email</label>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix user-reg-ico"></i>
+                <input id="username-reg" type="email" class="validate">
+                <label for="username-reg">User Name</label>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix">lock</i>
+                <input id="pass-reg" type="password" class="validate">
+                <label for="pass-reg">Password</label>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix">lock</i>
+                <input id="pass-reg2" type="password" class="validate">
+                <label for="pass-reg2">Confirm Password</label>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix">format_color_text</i>
+                <input id="letter-reg" type="password" class="validate">
+                <label for="letter-reg">Type the Letters Below</label>
+            </div>
+            <div class="recaptcha">
+                <img src="/images/re-captcha.jpg" alt="">
+            </div>
+            <p>
+                <input type="checkbox" id="checkbox-reg" />
+                <label for="checkbox-reg">Yes, I understand and agree to the <a href="#">Semilimes Terms of Service</a> , including the
+                    <a href="#">Users Agreement</a> and <a href="#">Privacy Policy</a>. </label>
+            </p>
+            <input type="submit" value="Sign Up">
+        </form>
+    </main>
+</article>
+
+
+
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>
